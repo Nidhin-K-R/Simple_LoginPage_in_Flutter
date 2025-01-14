@@ -13,21 +13,29 @@ class _SecondScreenState extends State<SecondScreen> {
     return Scaffold(
       backgroundColor: Colors.lightBlueAccent,
       body: SafeArea(
-          child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        //crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Center(child: Text("Hey Nidhin")),
-          Center(
-            child: ElevatedButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              child: Text("Sign Out"),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          //crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            const Center(
+              child: Text("Hey Nidhin"),
             ),
-          ),
-        ],
-      )),
+            Image.asset(
+              'assets/images/positive-ex-quotes.jpg',
+              height: 200,
+              width: 200,
+            ),
+            Center(
+              child: ElevatedButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text("Sign Out"),
+              ),
+            ),
+          ],
+        ),
+      ),
     );
   }
 }

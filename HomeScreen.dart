@@ -12,7 +12,7 @@ var visibles = Icon(Icons.visibility);
 var non_visible = Icon(Icons.visibility_off);
 var icoon = non_visible;
 var obs = true;
-
+var buttonColor = Colors.yellow;
 var use = 'nidhin';
 var pas = '0000';
 TextEditingController _username = TextEditingController();
@@ -158,7 +158,7 @@ class _HomescreenState extends State<HomeScreen> {
               },
               child: Text("Sign up"),
               style: ButtonStyle(
-                backgroundColor: WidgetStatePropertyAll(Colors.yellow),
+                backgroundColor: WidgetStatePropertyAll(buttonColor),
                 minimumSize: WidgetStatePropertyAll(
                   Size(500, 50),
                 ),
@@ -174,7 +174,7 @@ class _HomescreenState extends State<HomeScreen> {
         backgroundColor: const Color.fromARGB(252, 231, 216, 216),
         shadowColor: Colors.grey,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-        actions: [Icon(Icons.search), Icon(Icons.exit_to_app)],
+        // actions: [Icon(Icons.search), Icon(Icons.exit_to_app)],
         elevation: 10,
         title: Text("Login Page"),
         centerTitle: true,
